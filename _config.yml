@@ -4,7 +4,7 @@
 # baseurl is the website's URL without the hostname
 
 # If you are building a simple GitHub user page (http://username.github.io) then use these settings:
-url: "http://xarmarakesh.github.io"
+url: "http://rakshrma.github.io"
 baseurl: ""
 
 # If you are building a GitHub project page then use these settings:
@@ -28,7 +28,7 @@ navbar-links:
   Education: 
     - Courses:
     - Thesis projects:     
-  CV: "https://xarmarakesh.github.io/pdf/RakeshSharma_CV_current.pdf"
+  CV: "https://rakshrma.github.io/pdf/RakeshSharma_CV_current.pdf"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
@@ -57,7 +57,7 @@ navbar-links:
 author:
   name: Rakesh Sharma
   #facebook: yourname  # eg. daattali
-  github: xarmarakesh    # eg. daattali
+  github: rakshrma    # eg. daattali
   #twitter: yourname   # eg. daattali
   #reddit: yourname    # eg. daattali
   #google-plus: +yourname   # eg. +DeanAttali or 109424658772469020925
@@ -221,8 +221,3 @@ prose:
           label: "Publish"
           help: "Check to publish post, uncheck to hide."
 
-gems:
-  - jekyll-paginate
-
-# Beautiful Jekyll / Dean Attali
-# 2fc73a3a967e97599c9763d05e564189
