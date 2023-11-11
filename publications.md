@@ -5,7 +5,7 @@ subtitle: List of all published work
 ---
 
 ---
-subtitle: Patent Publications
+Patent Publications
 ----
 
 1. H. Desai, M. Kawiecki, **R. Sharma**, A. Tiwari, and J. Venderley, WO2023044089A1 - Methods and apparatuses for detecting anomalies when filling a container with fluid, US Patent App. PCT/US2022/043937, Mar. 2023.
@@ -13,7 +13,7 @@ subtitle: Patent Publications
 3. **R. Sharma** and M. Madhusudhanan, Image processing method of enabling financial transaction and an image processing system thereof, US Patent App. 14/459,428, Dec. 2015.
 
 ---
-subtitle: Journal Articles
+Journal Articles
 ----
 
 1. S. Goyal, P. Bist, and **R. Sharma**, “Optimal sample pooling: An efficient tool against sars-cov-2,” medRxiv, 2020.
@@ -22,13 +22,13 @@ subtitle: Journal Articles
 **One article is ready for journal submission and one more is in draft stage.**
 
 ---
-subtitle: Conference Proceedings
+Conference Proceedings
 ----
 
 1. J. Pai, M. Azad, B. Goyal, R. Nair, **R. Sharma**, and D. Dendukuri, “A point-of-care immunoassay platform for thyroid function based on hydrogel sensors embedded inside a microfluidic device,” in 23rd International Conference on Miniaturized Systems for Chemistry and Life Sciences, MicroTAS 2019, Chemical and Biological Microsystems Society, 2019, pp. 102–103.
 
 ---
-subtitle: Invited Talk
+Invited Talk
 ----
 
 1. 36th Annual Seminar And 20th Triguna Sen Memorial Lecture “The Artificial Intelli- gence Revolution, Are You Ready?
