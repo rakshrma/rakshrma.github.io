@@ -23,8 +23,7 @@ description: Data Scientist - Medicines Innovation Hub, Eli Lilly & Company
 
 # List of links in the navigation bar
 navbar-links:
-  Publications: "publications"  
-  Talks and Presentations: "talks_presentations"
+  Publications: "publications"
   Education:
     - Courses: "https://rakshrma.github.io/pdf/Rakesh_Transcript_comp.pdf"
     - Thesis projects: "https://rakshrma.github.io/pdf/Rakesh_masters_thesis.pdf"     
