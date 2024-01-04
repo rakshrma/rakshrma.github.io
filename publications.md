@@ -20,7 +20,7 @@ Journal Articles
 2. S. Goyal, P. Bist, and **R. Sharma**, “Optimal sample pooling: An efficient tool against sars-cov-2,” medRxiv, 2020.
 3. **R. Sharma**, G. Kapusetti, S. Y. Bhong, et al., “Osteoconductive amine-functionalized graphene–poly (methyl methacrylate) bone cement composite with controlled exothermic polymerization,” Bioconjugate chemistry, vol. 28, no. 9, pp. 2254–2265, 2017.
 
-**One article is ready for journal submission and one more is in draft stage.**
+**Two articles are in draft stage.**
 
 ---
 Conference Proceedings
