@@ -16,8 +16,9 @@ Patent Publications
 Journal Articles
 ----
 
-1. S. Goyal, P. Bist, and **R. Sharma**, “Optimal sample pooling: An efficient tool against sars-cov-2,” medRxiv, 2020.
-2. **R. Sharma**, G. Kapusetti, S. Y. Bhong, et al., “Osteoconductive amine-functionalized graphene–poly (methyl methacrylate) bone cement composite with controlled exothermic polymerization,” Bioconjugate chemistry, vol. 28, no. 9, pp. 2254–2265, 2017.
+1. X. Dang, H. Shih, **R. Sharma**, et al., “Clinical investigations of large volume subcutaneous delivery up to 25ml for lean and non-lean subjects,” In Review, 2023.
+2. S. Goyal, P. Bist, and **R. Sharma**, “Optimal sample pooling: An efficient tool against sars-cov-2,” medRxiv, 2020.
+3. **R. Sharma**, G. Kapusetti, S. Y. Bhong, et al., “Osteoconductive amine-functionalized graphene–poly (methyl methacrylate) bone cement composite with controlled exothermic polymerization,” Bioconjugate chemistry, vol. 28, no. 9, pp. 2254–2265, 2017.
 
 **One article is ready for journal submission and one more is in draft stage.**
 
