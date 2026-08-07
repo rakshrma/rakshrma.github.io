@@ -76,7 +76,7 @@ subtitle: List of all published work
    *Body composition analysis of weight loss induced by GLP1 receptor agonists*,
    Korean College of Radiologists Annual Meeting, 2025. Oral presentation.
 
-6. S. Vasisht, **R. Sharma**, G. M. Vargas, R. Damani, J. C. Gee, W. Witschey, C. M. Vollmer, and V. M. Gershuni,
+6. S. Vasisht†, **R. Sharma**†, G. M. Vargas, R. Damani, J. C. Gee, W. Witschey, C. M. Vollmer, and V. M. Gershuni († equal contribution),
    *Muscle quality on preoperative imaging is associated with postoperative pancreatic fistula risk*,
    American College of Surgeons Annual Meeting, 2025. Oral presentation.
 
@@ -108,11 +108,11 @@ subtitle: List of all published work
    *Trends in muscle and fat metrics and their association with outcomes following CAR T-cell therapy in older adults with non-Hodgkin lymphoma*,
    ASH Annual Meeting, 2025. Abstract 3553; **Blood** 146.Supplement 1, p. 3553.
 
-6. R. Damani, **R. Sharma**, S. Vasisht, G. M. Vargas, J. Duda, G. Wu, J. C. Gee, W. Witschey, and V. Gershuni,
+6. R. Damani†, **R. Sharma**†, S. Vasisht, G. M. Vargas, J. Duda, G. Wu, J. C. Gee, W. Witschey, and V. Gershuni († equal contribution),
    *Volumetric body composition analysis on preoperative CT scans improves risk prediction in colorectal surgery patients*,
    RSNA Annual Meeting, 2025.
 
-7. R. Zaki, **R. Sharma**, P. Goswami, H. Yang, J. C. Gee, C. E. Kahn, J. B. Kneeland, A. Borthakur, and W. Witschey,
+7. R. Zaki†, **R. Sharma**†, P. Goswami, H. Yang, J. C. Gee, C. E. Kahn, J. B. Kneeland, A. Borthakur, and W. Witschey († equal contribution),
    *Enhancing diagnostic concordance and quality assurance through automated MRI and arthroscopy report comparison using large language models*,
    RSNA Annual Meeting, 2025.
 
