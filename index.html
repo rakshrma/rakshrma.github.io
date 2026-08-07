@@ -86,12 +86,13 @@
     }
     .pub:hover { background: #f7f9fc; }
     .pub-thumb { flex: 0 0 150px; }
-    .pub-thumb svg {
+    .pub-thumb svg, .pub-thumb img {
       width: 150px; height: 104px;
       border-radius: 8px;
       display: block;
       box-shadow: 0 1px 5px rgba(0,0,0,.10);
     }
+    .pub-thumb img { object-fit: cover; border: 1px solid var(--rule); }
     .pub-body { flex: 1; min-width: 0; }
     .pub-title { font-weight: 700; font-size: 16.5px; margin: 0 0 3px; }
     .pub-authors { font-size: 14.5px; color: var(--muted); margin: 0 0 3px; }
@@ -161,6 +162,7 @@
   <!-- ================= news ================= -->
   <h2>News</h2>
   <ul class="news">
+    <li><span class="date">2026</span><span>Submitted <b>ETHOS</b>, a modular ethics framework for clinical multi-agent systems, to the <b>Pacific Symposium on Biocomputing 2027</b>.</span></li>
     <li><span class="date">2026</span><span><b>DISCERN</b> accepted for an <b>oral presentation at AMIA 2026</b> &mdash; a clinical impact-aware framework for radiology report comparison.</span></li>
     <li><span class="date">2026</span><span><b>CURA</b> accepted at <b>MICCAI 2026</b> &mdash; calibrated uncertainty with retrieval and agents for medical decision support.</span></li>
     <li><span class="date">2026</span><span>Our study of body composition and cardiac function in early breast cancer accepted at <b>Breast Cancer Research</b>.</span></li>
@@ -175,7 +177,16 @@
   <div class="year-head">2026</div>
 
   <div class="pub">
-    <div class="pub-thumb"><svg viewBox="0 0 150 104" xmlns="http://www.w3.org/2000/svg"><rect width="150" height="104" fill="#eef3fb"/><rect x="18" y="16" width="50" height="72" rx="4" fill="#fff" stroke="#1756a9" stroke-width="2"/><rect x="82" y="16" width="50" height="72" rx="4" fill="#fff" stroke="#1756a9" stroke-width="2"/><line x1="24" y1="30" x2="60" y2="30" stroke="#9db8dd" stroke-width="3"/><line x1="24" y1="42" x2="60" y2="42" stroke="#9db8dd" stroke-width="3"/><line x1="24" y1="54" x2="52" y2="54" stroke="#e2574c" stroke-width="3"/><line x1="88" y1="30" x2="124" y2="30" stroke="#9db8dd" stroke-width="3"/><line x1="88" y1="42" x2="116" y2="42" stroke="#0f7b3f" stroke-width="3"/><line x1="88" y1="54" x2="124" y2="54" stroke="#9db8dd" stroke-width="3"/><circle cx="75" cy="76" r="13" fill="#1756a9"/><path d="M69 76l4 4 8-9" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round"/></svg></div>
+    <div class="pub-thumb"><img src="img/pubs/ethos_fig.png" alt="ETHOS framework overview"></div>
+    <div class="pub-body">
+      <p class="pub-title">ETHOS: Towards a Modular Ethics Framework for Clinical Multi-Agent Systems</p>
+      <p class="pub-authors"><b>R. Sharma</b>&dagger;, S. Pugh&dagger;, C. Beeche, P. Singhal, R. Wu, M. Eby, J. Duda, J. Gee, K. O&rsquo;Brien, H. Sagreiya, M. Serper, V. Gershuni, A. Bradbury, A. Verma, E. Eaton, K. B. Johnson, W. Witschey <span style="color:var(--faint)">(&dagger; equal contribution)</span></p>
+      <p class="pub-venue">Pacific Symposium on Biocomputing (PSB), 2027 &mdash; submitted *</p>
+    </div>
+  </div>
+
+  <div class="pub">
+    <div class="pub-thumb"><img src="img/pubs/discern_fig.png" alt="DISCERN framework overview"></div>
     <div class="pub-body">
       <p class="pub-title">DISCERN: A Clinical Impact-Aware Framework for Radiology Report Comparison</p>
       <p class="pub-authors"><b>R. Sharma</b>, C. Beeche, J. Dong, R. Zhuang, H. Qu, R. Zhang, V. Gangaram, P. Goswami, J. Xin, J. Ballard, A. Goldberg, H. Sagreiya, Q. Long, T. Chen, W. Witschey</p>
@@ -185,11 +196,12 @@
   </div>
 
   <div class="pub">
-    <div class="pub-thumb"><svg viewBox="0 0 150 104" xmlns="http://www.w3.org/2000/svg"><rect width="150" height="104" fill="#f0f7f1"/><circle cx="45" cy="34" r="12" fill="#fff" stroke="#0f7b3f" stroke-width="2"/><circle cx="105" cy="34" r="12" fill="#fff" stroke="#0f7b3f" stroke-width="2"/><circle cx="45" cy="74" r="12" fill="#fff" stroke="#0f7b3f" stroke-width="2"/><circle cx="105" cy="74" r="12" fill="#fff" stroke="#0f7b3f" stroke-width="2"/><circle cx="75" cy="54" r="15" fill="#0f7b3f"/><path d="M75 47v9m0 0l-4-4m4 4l4-4" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round"/><line x1="55" y1="40" x2="63" y2="47" stroke="#0f7b3f" stroke-width="2"/><line x1="95" y1="40" x2="87" y2="47" stroke="#0f7b3f" stroke-width="2"/><line x1="55" y1="68" x2="63" y2="61" stroke="#0f7b3f" stroke-width="2"/><line x1="95" y1="68" x2="87" y2="61" stroke="#0f7b3f" stroke-width="2"/></svg></div>
+    <div class="pub-thumb"><img src="img/pubs/cura_fig.png" alt="CURA framework overview"></div>
     <div class="pub-body">
       <p class="pub-title">CURA: Calibrated Uncertainty with Retrieval and Agents for Trustworthy Multimodal Medical Decision Support</p>
       <p class="pub-authors">R. Zhang, J. Dong, J. Xin, J. Ballard, C. Beeche, <b>R. Sharma</b>, X. Zhao, N. Konz, Q. Long, W. Witschey, T. Chen</p>
       <p class="pub-venue">MICCAI, 2026 <span class="accept">&mdash; accepted</span></p>
+      <p class="pub-links"><a href="https://github.com/UNITES-Lab/CURA">code</a></p>
     </div>
   </div>
 
@@ -275,7 +287,7 @@
     <div class="pub-body">
       <p class="pub-title">Automated CT-Based Volumetric Body Composition Analysis Predicts Post-Operative Complications Following Pancreaticoduodenectomy</p>
       <p class="pub-authors"><b>R. Sharma</b>, S. Vasisht, G. M. Vargas, R. Damani, J. Duda, J. C. Gee, C. M. Vollmer, W. Witschey, V. Gershuni</p>
-      <p class="pub-venue">CLINICCAI (MICCAI), 2025 &middot; oral presentation</p>
+      <p class="pub-venue">CLINICCAI (MICCAI), 2025 &middot; oral presentation &middot; manuscript under review *</p>
     </div>
   </div>
 

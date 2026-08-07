@@ -28,23 +28,27 @@ subtitle: List of all published work
 
 ## Preprints and Manuscripts Under Review
 
-1. C. A. Beeche, H. Tavolinejad, Z. Li, Z. Fan, B. Zhao, H. Wei, L. Steger, **R. Sharma**, L. Ni, S. Zaman, J. Duda, J. Gee, A. Verma, H. Sagreiya, S. M. Damrauer, M. G. Levin, D. Rader, A. Goldberg, J. A. Chirinos, and W. R. Witschey,
+1. **R. Sharma**†, S. Pugh†, C. Beeche, P. Singhal, R. Wu, M. Eby, J. Duda, J. Gee, K. O'Brien, H. Sagreiya, M. Serper, V. Gershuni, A. Bradbury, A. Verma, E. Eaton, K. B. Johnson, and W. Witschey († equal contribution),
+   *ETHOS: Towards a modular ethics framework for clinical multi-agent systems*,
+   Submitted to the **Pacific Symposium on Biocomputing (PSB)**, 2027.
+
+2. C. A. Beeche, H. Tavolinejad, Z. Li, Z. Fan, B. Zhao, H. Wei, L. Steger, **R. Sharma**, L. Ni, S. Zaman, J. Duda, J. Gee, A. Verma, H. Sagreiya, S. M. Damrauer, M. G. Levin, D. Rader, A. Goldberg, J. A. Chirinos, and W. R. Witschey,
    *Aortic geometric atlas: Centile-based reference charts and pathological signatures across the adult lifespan*,
    **medRxiv**, 2026. [DOI: 10.64898/2026.06.25.26356450](https://doi.org/10.64898/2026.06.25.26356450)
 
-2. J. L. Golubovsky, **R. Sharma**, E. Massaad, Y. Ghenbot, G. A. Crabill, J. D. Arena, S. Khalid, M. Mathur, A. Kiapour, W. C. Welch, B. Judy, A. S. Zhang, A. Khalsa, D. Casper, W. R. Witschey, V. M. Gershuni, A. K. Ozturk, and J. H. Shin,
+3. J. L. Golubovsky, **R. Sharma**, E. Massaad, Y. Ghenbot, G. A. Crabill, J. D. Arena, S. Khalid, M. Mathur, A. Kiapour, W. C. Welch, B. Judy, A. S. Zhang, A. Khalsa, D. Casper, W. R. Witschey, V. M. Gershuni, A. K. Ozturk, and J. H. Shin,
    *Automated computed tomography-based body composition analysis and utility in risk stratification for adult spinal deformity correction — a retrospective cohort analysis*,
    Manuscript under review, 2026.
 
-3. V. Gershuni, R. A. Damani, S. Vasisht, **R. Sharma**, J. Rowe, C. Compher, J. Duda, H. Sagreiya, R. Kelz, H. Li, G. Tasian, S. Damrauer, G. D. Wu, and W. R. Witschey,
+4. V. Gershuni, R. A. Damani, S. Vasisht, **R. Sharma**, J. Rowe, C. Compher, J. Duda, H. Sagreiya, R. Kelz, H. Li, G. Tasian, S. Damrauer, G. D. Wu, and W. R. Witschey,
    *Development of an automated, imaging-based preoperative screening model for early identification of malnutrition in an abdominal surgery cohort*,
    **medRxiv**, 2026. [DOI: 10.64898/2026.06.08.26355187](https://doi.org/10.64898/2026.06.08.26355187)
 
-4. C. Beeche, J. Kim, H. Tavolinejad, B. Zhao, J. Dong, **R. Sharma**, J. Duda, J. Gee, F. Dako, A. Verma, C. Morse, B. Hou, and W. R. Witschey,
+5. C. Beeche, J. Kim, H. Tavolinejad, B. Zhao, J. Dong, **R. Sharma**, J. Duda, J. Gee, F. Dako, A. Verma, C. Morse, B. Hou, and W. R. Witschey,
    *Generalizable CT vision-language modeling for population health and disease risk*,
    **medRxiv**, 2026. [DOI: 10.1101/2025.07.03.25330654](https://doi.org/10.1101/2025.07.03.25330654) (previously circulated as *A Pan-Organ Vision-Language Model for Generalizable 3D CT Representations*)
 
-5. S. Goyal, P. Bist, and **R. Sharma**,
+6. S. Goyal, P. Bist, and **R. Sharma**,
    *Optimal sample pooling: An efficient tool against SARS-CoV-2*,
    **medRxiv**, 2020.
 
@@ -66,7 +70,7 @@ subtitle: List of all published work
 
 4. **R. Sharma**, S. Vasisht, G. M. Vargas, R. Damani, J. Duda, J. C. Gee, C. M. Vollmer, W. Witschey, and V. Gershuni,
    *Automated CT-based volumetric body composition analysis predicts post-operative complications following pancreaticoduodenectomy: A retrospective study*,
-   CLINICCAI (MICCAI), 2025. Oral presentation.
+   CLINICCAI (MICCAI), 2025. Oral presentation. Full manuscript under review.
 
 5. K. Lee, **R. Sharma**, E. Bouche, C. Quy, V. Gershuni, and W. Witschey,
    *Body composition analysis of weight loss induced by GLP1 receptor agonists*,
