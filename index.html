@@ -1,78 +1,400 @@
----
-layout: page
-title: Rakesh Sharma
-subtitle: PhD Student in Bioengineering, University of Pennsylvania
-use-site-title: true
-bigimg:
-  - "/img/big-img/rakesh-5.jpg" : "2023, Panchakot, Nepal"
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rakesh Sharma</title>
+  <meta name="description" content="Rakesh Sharma — PhD Student in Bioengineering, University of Pennsylvania. Multimodal AI for medical imaging and clinical decision support.">
+  <meta name="author" content="Rakesh Sharma">
+  <link rel="icon" type="image/png" href="img/rakesh-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --text: #1a1a1a;
+      --muted: #555;
+      --faint: #8a8a8a;
+      --accent: #1756a9;
+      --accent-dark: #10407e;
+      --rule: #e6e6e6;
+      --highlight: #fff7e0;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      color: var(--text);
+      background: #ffffff;
+      margin: 0;
+      padding: 0;
+      font-size: 16px;
+      line-height: 1.55;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { color: var(--accent-dark); text-decoration: underline; }
+    .page {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 48px 24px 40px;
+    }
+    /* ---------- header ---------- */
+    .intro { display: flex; gap: 36px; align-items: flex-start; }
+    .intro-text { flex: 1; }
+    h1 {
+      font-weight: 900;
+      font-size: 34px;
+      margin: 0 0 2px;
+      letter-spacing: -0.5px;
+    }
+    .tagline { color: var(--muted); margin: 0 0 16px; font-size: 17px; }
+    .profile-wrap { flex-shrink: 0; text-align: center; }
+    .profile-pic {
+      width: 172px; height: 172px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 2px 14px rgba(0,0,0,.14);
+    }
+    .quick-links { margin-top: 14px; font-size: 15px; line-height: 1.9; }
+    .quick-links a { white-space: nowrap; }
+    .quick-links span.sep { color: #ccc; margin: 0 6px; }
+    .bio p { margin: 0 0 12px; color: #2b2b2b; }
+    /* ---------- sections ---------- */
+    h2 {
+      font-weight: 900;
+      font-size: 24px;
+      margin: 44px 0 6px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--rule);
+      letter-spacing: -0.3px;
+    }
+    .section-note { color: var(--faint); font-size: 14px; margin: 4px 0 18px; }
+    /* ---------- news ---------- */
+    .news { list-style: none; margin: 14px 0 0; padding: 0; }
+    .news li { display: flex; gap: 14px; margin-bottom: 9px; }
+    .news .date { flex: 0 0 84px; color: var(--faint); font-size: 14px; padding-top: 1px; }
+    /* ---------- publications ---------- */
+    .year-head {
+      font-weight: 900; font-size: 19px; color: var(--muted);
+      margin: 30px 0 4px; letter-spacing: 0.5px;
+    }
+    .pub {
+      display: flex; gap: 22px;
+      padding: 16px 10px;
+      border-radius: 10px;
+      align-items: flex-start;
+    }
+    .pub:hover { background: #f7f9fc; }
+    .pub-thumb { flex: 0 0 150px; }
+    .pub-thumb svg {
+      width: 150px; height: 104px;
+      border-radius: 8px;
+      display: block;
+      box-shadow: 0 1px 5px rgba(0,0,0,.10);
+    }
+    .pub-body { flex: 1; min-width: 0; }
+    .pub-title { font-weight: 700; font-size: 16.5px; margin: 0 0 3px; }
+    .pub-authors { font-size: 14.5px; color: var(--muted); margin: 0 0 3px; }
+    .pub-authors b { color: var(--text); font-weight: 700; }
+    .pub-venue { font-size: 14.5px; font-style: italic; color: var(--muted); margin: 0 0 5px; }
+    .pub-venue .accept { font-style: normal; font-weight: 700; color: #0f7b3f; }
+    .pub-links { font-size: 14px; }
+    .pub-links a { margin-right: 12px; }
+    .badge {
+      display: inline-block; font-style: normal; font-size: 12px; font-weight: 700;
+      color: var(--accent-dark); background: #e8f0fb;
+      border-radius: 4px; padding: 1px 7px; margin-left: 6px; vertical-align: 1px;
+    }
+    /* ---------- compact lists (patents / talks) ---------- */
+    .compact { margin: 14px 0 0; padding-left: 20px; }
+    .compact li { margin-bottom: 10px; font-size: 15px; color: #2b2b2b; }
+    /* ---------- footer ---------- */
+    footer {
+      margin-top: 56px; padding-top: 16px;
+      border-top: 1px solid var(--rule);
+      color: var(--faint); font-size: 13px; text-align: center;
+    }
+    @media (max-width: 640px) {
+      .intro { flex-direction: column-reverse; align-items: center; text-align: center; }
+      .pub { flex-direction: column; gap: 10px; }
+      .pub-thumb svg { width: 100%; height: auto; }
+      .news li { flex-direction: column; gap: 0; }
+      .news .date { flex: none; }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
 
-<p>I am a biomedical engineer and PhD student at the University of Pennsylvania, advised by Prof. Walter R. T. Witschey and Prof. Victoria M. Gershuni, with a strong interest in multimodal learning systems, medical image analysis, and the broader applications of AI in diagnostics and therapeutics. My work focuses on developing clinically deployable AI solutions—particularly multimodal models and multi-agent architectures for gastrointestinal disorders and post-surgical complication prediction, including first-author research on clinically-aware evaluation of medical vision–language models. I also serve as a peer reviewer for journals including <em>Nature Communications</em>, the <em>Korean Journal of Radiology</em>, and the <em>Journal of Imaging Informatics in Medicine</em>, as well as the ACM-BCB and SIIM-CAIMI conferences.</p>
-<p>Before beginning my doctoral studies, I spent four years as a data scientist at Eli Lilly, where I had the opportunity to contribute during the company's rise as the world’s most valued pharmaceutical organization. I helped introduce and scale data science capabilities within the Delivery, Devices, and Connected Solutions team, contributing to innovation programs and interdisciplinary collaborations, including projects with Purdue University. This experience deepened my understanding of how data-driven solutions can meaningfully enhance healthcare delivery at scale.</p> 
-<p>My industry journey began in 2013 with the development of mobile vision systems for disease diagnosis, followed by work at a diagnostics startup optimizing microfluidics-based immunoassay platforms for hormone detection. These experiences inspired me to co-found a surgical robotics company, where I helped design a platform to support accurate initial punctures in laparoscopy. This entrepreneurial chapter required adaptability and interdisciplinary leadership, allowing me to build, test, and refine technologies that addressed real clinical needs.</p> 
-<p>While these experiences have shaped my technical and translational perspective, I continue to seek deeper scientific understanding and exposure to cutting-edge research. Pursuing my PhD enables me to collaborate with leading researchers, explore innovative multimodal learning approaches, and contribute to the next generation of clinically impactful biomedical technologies.</p>
-<div class="posts-list">
-  {% for post in paginator.posts %}
-  <article class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-	  <h2 class="post-title">{{ post.title }}</h2>
-
-	  {% if post.subtitle %}
-	  <h3 class="post-subtitle">
-	    {{ post.subtitle }}
-	  </h3>
-	  {% endif %}
-    </a>
-
-    <p class="post-meta">
-      Posted on {{ post.date | date: "%B %-d, %Y" }}
-    </p>
-
-    <div class="post-entry-container">
-      {% if post.image %}
-      <div class="post-image">
-        <a href="{{ post.url | prepend: site.baseurl }}">
-          <img src="{{ post.image }}">
-        </a>
-      </div>
-      {% endif %}
-      <div class="post-entry">
-        {{ post.excerpt | strip_html | xml_escape | truncatewords: site.excerpt_length }}
-        {% assign excerpt_word_count = post.excerpt | number_of_words %}
-        {% if post.content != post.excerpt or excerpt_word_count > site.excerpt_length %}
-          <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
-        {% endif %}
+  <!-- ================= header ================= -->
+  <div class="intro">
+    <div class="intro-text">
+      <h1>Rakesh Sharma</h1>
+      <p class="tagline">PhD Student in Bioengineering &middot; University of Pennsylvania</p>
+      <div class="bio">
+        <p>I am a PhD student in Bioengineering at the University of Pennsylvania, advised by
+        <a href="https://www.med.upenn.edu/apps/faculty/index.php/g275/p4501477">Prof. Walter R.&thinsp;T. Witschey</a> and
+        Prof. Victoria M. Gershuni. I build clinically deployable multimodal AI&mdash;vision&ndash;language models,
+        multi-agent systems, and imaging pipelines&mdash;for gastrointestinal disorders and post-surgical
+        complication prediction. My recent first-author work includes clinically-aware evaluation of medical
+        vision&ndash;language models. I serve as a peer reviewer for <i>Nature Communications</i>, the
+        <i>Korean Journal of Radiology</i>, the <i>Journal of Imaging Informatics in Medicine</i>, ACM-BCB, and SIIM-CAIMI.</p>
+        <p>Before my PhD, I spent four years as a data scientist at Eli Lilly working on drug-delivery devices and
+        imaging pipelines, co-founded a surgical robotics company as CTO, developed microfluidic diagnostic
+        platforms at Achira Labs, and built computer-vision systems at Wipro. I am an inventor on three patent
+        applications and hold a B.Tech&ndash;M.Tech in Bioengineering from IIT (BHU) Varanasi.</p>
       </div>
     </div>
+    <div class="profile-wrap">
+      <img class="profile-pic" src="img/rakesh-icon.png" alt="Rakesh Sharma">
+      <div class="quick-links">
+        <a href="mailto:rakshrma@upenn.edu">Email</a> <span class="sep">/</span>
+        <a href="pdf/Rakesh_Sharma_CV_2026.pdf">CV</a> <span class="sep">/</span>
+        <a href="https://scholar.google.com/citations?user=2VLokzIAAAAJ">Scholar</a><br>
+        <a href="https://github.com/rakshrma">GitHub</a> <span class="sep">/</span>
+        <a href="https://www.linkedin.com/in/rak-shrma/">LinkedIn</a> <span class="sep">/</span>
+        <a href="https://orcid.org/0000-0002-4916-0174">ORCID</a>
+      </div>
+    </div>
+  </div>
 
-    {% if post.tags.size > 0 %}
-    <div class="blog-tags">
-       Tags:
-       {% if site.link-tags %}
-       {% for tag in post.tags %}
-       <a href="{{ site.baseurl }}/tag/{{ tag }}">{{ tag }}</a>
-       {% endfor %}
-       {% else %}
-         {{ post.tags | join: ", " }}
-       {% endif %}
-     </div>
-    {% endif %}
+  <!-- ================= news ================= -->
+  <h2>News</h2>
+  <ul class="news">
+    <li><span class="date">2026</span><span><b>DISCERN</b> accepted for an <b>oral presentation at AMIA 2026</b> &mdash; a clinical impact-aware framework for radiology report comparison.</span></li>
+    <li><span class="date">2026</span><span><b>CURA</b> accepted at <b>MICCAI 2026</b> &mdash; calibrated uncertainty with retrieval and agents for medical decision support.</span></li>
+    <li><span class="date">2026</span><span>Our study of body composition and cardiac function in early breast cancer accepted at <b>Breast Cancer Research</b>.</span></li>
+    <li><span class="date">2026</span><span>Presented a poster on LLM-based attending-to-resident feedback at the <b>SIIM Annual Meeting</b>.</span></li>
+    <li><span class="date">2025</span><span>Oral presentation at <b>CLINICCAI (MICCAI 2025)</b> on CT body composition for predicting complications after pancreaticoduodenectomy.</span></li>
+  </ul>
 
-   </article>
-  {% endfor %}
+  <!-- ================= publications ================= -->
+  <h2>Publications</h2>
+  <p class="section-note">Journal papers, preprints, and conference presentations. * denotes work under review.</p>
+
+  <div class="year-head">2026</div>
+
+  <div class="pub">
+    <div class="pub-thumb"><svg viewBox="0 0 150 104" xmlns="http://www.w3.org/2000/svg"><rect width="150" height="104" fill="#eef3fb"/><rect x="18" y="16" width="50" height="72" rx="4" fill="#fff" stroke="#1756a9" stroke-width="2"/><rect x="82" y="16" width="50" height="72" rx="4" fill="#fff" stroke="#1756a9" stroke-width="2"/><line x1="24" y1="30" x2="60" y2="30" stroke="#9db8dd" stroke-width="3"/><line x1="24" y1="42" x2="60" y2="42" stroke="#9db8dd" stroke-width="3"/><line x1="24" y1="54" x2="52" y2="54" stroke="#e2574c" stroke-width="3"/><line x1="88" y1="30" x2="124" y2="30" stroke="#9db8dd" stroke-width="3"/><line x1="88" y1="42" x2="116" y2="42" stroke="#0f7b3f" stroke-width="3"/><line x1="88" y1="54" x2="124" y2="54" stroke="#9db8dd" stroke-width="3"/><circle cx="75" cy="76" r="13" fill="#1756a9"/><path d="M69 76l4 4 8-9" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round"/></svg></div>
+    <div class="pub-body">
+      <p class="pub-title">DISCERN: A Clinical Impact-Aware Framework for Radiology Report Comparison</p>
+      <p class="pub-authors"><b>R. Sharma</b>, C. Beeche, J. Dong, R. Zhuang, H. Qu, R. Zhang, V. Gangaram, P. Goswami, J. Xin, J. Ballard, A. Goldberg, H. Sagreiya, Q. Long, T. Chen, W. Witschey</p>
+      <p class="pub-venue">AMIA Annual Symposium, 2026 <span class="accept">&mdash; accepted, oral presentation</span></p>
+      <p class="pub-links"><a href="https://doi.org/10.64898/2026.05.26.26353612">preprint</a><a href="https://github.com/rakshrma/discern">code</a></p>
+    </div>
+  </div>
+
+  <div class="pub">
+    <div class="pub-thumb"><svg viewBox="0 0 150 104" xmlns="http://www.w3.org/2000/svg"><rect width="150" height="104" fill="#f0f7f1"/><circle cx="45" cy="34" r="12" fill="#fff" stroke="#0f7b3f" stroke-width="2"/><circle cx="105" cy="34" r="12" fill="#fff" stroke="#0f7b3f" stroke-width="2"/><circle cx="45" cy="74" r="12" fill="#fff" stroke="#0f7b3f" stroke-width="2"/><circle cx="105" cy="74" r="12" fill="#fff" stroke="#0f7b3f" stroke-width="2"/><circle cx="75" cy="54" r="15" fill="#0f7b3f"/><path d="M75 47v9m0 0l-4-4m4 4l4-4" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round"/><line x1="55" y1="40" x2="63" y2="47" stroke="#0f7b3f" stroke-width="2"/><line x1="95" y1="40" x2="87" y2="47" stroke="#0f7b3f" stroke-width="2"/><line x1="55" y1="68" x2="63" y2="61" stroke="#0f7b3f" stroke-width="2"/><line x1="95" y1="68" x2="87" y2="61" stroke="#0f7b3f" stroke-width="2"/></svg></div>
+    <div class="pub-body">
+      <p class="pub-title">CURA: Calibrated Uncertainty with Retrieval and Agents for Trustworthy Multimodal Medical Decision Support</p>
+      <p class="pub-authors">R. Zhang, J. Dong, J. Xin, J. Ballard, C. Beeche, <b>R. Sharma</b>, X. Zhao, N. Konz, Q. Long, W. Witschey, T. Chen</p>
+      <p class="pub-venue">MICCAI, 2026 <span class="accept">&mdash; accepted</span></p>
+    </div>
+  </div>
+
+  <div class="pub">
+    <div class="pub-thumb"><svg viewBox="0 0 150 104" xmlns="http://www.w3.org/2000/svg"><rect width="150" height="104" fill="#fdf1f3"/><path d="M75 82c-20-13-33-24-33-38a17 17 0 0 1 33-6 17 17 0 0 1 33 6c0 14-13 25-33 38z" fill="#e2574c" opacity="0.85"/><polyline points="46,54 60,54 66,40 74,66 80,50 86,54 104,54" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div class="pub-body">
+      <p class="pub-title">The Impact of Body Composition on Cardiac Function in Women with Early Breast Cancer Taking Cardiotoxic Chemotherapy</p>
+      <p class="pub-authors">G. Aleixo, W.-T. Hwang, R. Sedhom, <b>R. Sharma</b>, W. Jung, C. Xia, W. Witschey, B. Ky</p>
+      <p class="pub-venue">Breast Cancer Research, 2026 <span class="accept">&mdash; accepted</span> &middot; also ASCO 2026, abstract 12021 (<i>J. Clin. Oncol.</i> 44.16_suppl)</p>
+    </div>
+  </div>
+
+  <div class="pub">
+    <div class="pub-thumb"><svg viewBox="0 0 150 104" xmlns="http://www.w3.org/2000/svg"><rect width="150" height="104" fill="#eef3fb"/><path d="M62 14c0 22-14 26-14 44s10 32 27 32 27-14 27-32-14-22-14-44" fill="none" stroke="#1756a9" stroke-width="6" stroke-linecap="round"/><path d="M40 52h18M92 52h18" stroke="#9db8dd" stroke-width="3" stroke-linecap="round" stroke-dasharray="2 5"/><path d="M40 68h14M96 68h14" stroke="#9db8dd" stroke-width="3" stroke-linecap="round" stroke-dasharray="2 5"/></svg></div>
+    <div class="pub-body">
+      <p class="pub-title">Aortic Geometric Atlas: Centile-Based Reference Charts and Pathological Signatures Across the Adult Lifespan</p>
+      <p class="pub-authors">C. A. Beeche, H. Tavolinejad, Z. Li, Z. Fan, B. Zhao, H. Wei, L. Steger, <b>R. Sharma</b>, et&nbsp;al., J. A. Chirinos, W. R. Witschey</p>
+      <p class="pub-venue">medRxiv, 2026 *</p>
+      <p class="pub-links"><a href="https://doi.org/10.64898/2026.06.25.26356450">preprint</a></p>
+    </div>
+  </div>
+
+  <div class="pub">
+    <div class="pub-thumb"><svg viewBox="0 0 150 104" xmlns="http://www.w3.org/2000/svg"><rect width="150" height="104" fill="#f4f1fa"/><g stroke="#6a4fb3" stroke-width="4" stroke-linecap="round"><rect x="64" y="12" width="22" height="12" rx="4" fill="#6a4fb3"/><rect x="62" y="30" width="26" height="12" rx="4" fill="#8a6fd0" stroke="#8a6fd0"/><rect x="64" y="48" width="22" height="12" rx="4" fill="#6a4fb3"/><rect x="60" y="66" width="30" height="12" rx="4" fill="#8a6fd0" stroke="#8a6fd0"/><rect x="66" y="84" width="18" height="10" rx="4" fill="#6a4fb3"/></g></svg></div>
+    <div class="pub-body">
+      <p class="pub-title">Automated CT-Based Body Composition Analysis and Utility in Risk Stratification for Adult Spinal Deformity Correction</p>
+      <p class="pub-authors">J. L. Golubovsky, <b>R. Sharma</b>, E. Massaad, Y. Ghenbot, et&nbsp;al., W. R. Witschey, V. M. Gershuni, A. K. Ozturk, J. H. Shin</p>
+      <p class="pub-venue">Manuscript under review, 2026 *</p>
+    </div>
+  </div>
+
+  <div class="pub">
+    <div class="pub-thumb"><svg viewBox="0 0 150 104" xmlns="http://www.w3.org/2000/svg"><rect width="150" height="104" fill="#fff8ec"/><circle cx="60" cy="46" r="24" fill="none" stroke="#c98a1b" stroke-width="5"/><line x1="78" y1="64" x2="102" y2="88" stroke="#c98a1b" stroke-width="7" stroke-linecap="round"/><path d="M50 46l6 6 12-13" stroke="#c98a1b" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div class="pub-body">
+      <p class="pub-title">Development of an Automated, Imaging-Based Preoperative Screening Model for Early Identification of Malnutrition in an Abdominal Surgery Cohort</p>
+      <p class="pub-authors">V. Gershuni, R. A. Damani, S. Vasisht, <b>R. Sharma</b>, et&nbsp;al., G. D. Wu, W. R. Witschey</p>
+      <p class="pub-venue">medRxiv, 2026 *</p>
+      <p class="pub-links"><a href="https://doi.org/10.64898/2026.06.08.26355187">preprint</a></p>
+    </div>
+  </div>
+
+  <div class="pub">
+    <div class="pub-thumb"><svg viewBox="0 0 150 104" xmlns="http://www.w3.org/2000/svg"><rect width="150" height="104" fill="#eef6f6"/><circle cx="52" cy="52" r="26" fill="none" stroke="#12808a" stroke-width="3"/><circle cx="52" cy="52" r="17" fill="none" stroke="#12808a" stroke-width="2" opacity="0.55"/><circle cx="52" cy="52" r="8" fill="#12808a" opacity="0.7"/><rect x="92" y="30" width="34" height="8" rx="3" fill="#12808a" opacity="0.8"/><rect x="92" y="48" width="26" height="8" rx="3" fill="#12808a" opacity="0.55"/><rect x="92" y="66" width="30" height="8" rx="3" fill="#12808a" opacity="0.35"/></svg></div>
+    <div class="pub-body">
+      <p class="pub-title">Generalizable CT Vision-Language Modeling for Population Health and Disease Risk</p>
+      <p class="pub-authors">C. Beeche, J. Kim, H. Tavolinejad, B. Zhao, J. Dong, <b>R. Sharma</b>, et&nbsp;al., B. Hou, W. R. Witschey</p>
+      <p class="pub-venue">medRxiv, 2026 *</p>
+      <p class="pub-links"><a href="https://doi.org/10.1101/2025.07.03.25330654">preprint</a></p>
+    </div>
+  </div>
+
+  <div class="pub">
+    <div class="pub-thumb"><svg viewBox="0 0 150 104" xmlns="http://www.w3.org/2000/svg"><rect width="150" height="104" fill="#fdf1f3"/><path d="M88 20c14 2 24 14 24 30 0 20-16 34-37 34S38 70 38 50c0-13 7-23 17-28" fill="none" stroke="#c2455c" stroke-width="6" stroke-linecap="round"/><path d="M62 16l12 8-12 8" fill="none" stroke="#c2455c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div class="pub-body">
+      <p class="pub-title">Automated Pipeline for Analysis of Paraesophageal Hernias</p>
+      <p class="pub-authors">S. Lee, <b>R. Sharma</b>, W. R. Witschey, M. S. Altieri, D. A. Mankoff, V. Gershuni, D. A. Hashimoto</p>
+      <p class="pub-venue">Digestive Disease Week, 2026, abstract 1280 (<i>Gastrointest. Endosc.</i> 103.5) &middot; also ACTS 2026, abstract 78 (<i>J. Clin. Transl. Sci.</i>)</p>
+    </div>
+  </div>
+
+  <div class="pub">
+    <div class="pub-thumb"><svg viewBox="0 0 150 104" xmlns="http://www.w3.org/2000/svg"><rect width="150" height="104" fill="#eef3fb"/><path d="M30 26h56a8 8 0 0 1 8 8v18a8 8 0 0 1-8 8H52l-10 10v-10h-12a8 8 0 0 1-8-8V34a8 8 0 0 1 8-8z" fill="#fff" stroke="#1756a9" stroke-width="2.5"/><path d="M120 44h-40a8 8 0 0 0-8 8v14a8 8 0 0 0 8 8h26l10 10v-10h4a8 8 0 0 0 8-8V52a8 8 0 0 0-8-8z" fill="#1756a9" opacity="0.85"/><line x1="30" y1="38" x2="76" y2="38" stroke="#9db8dd" stroke-width="3"/><line x1="30" y1="48" x2="64" y2="48" stroke="#9db8dd" stroke-width="3"/><line x1="82" y1="58" x2="116" y2="58" stroke="#fff" stroke-width="3"/><line x1="82" y1="66" x2="106" y2="66" stroke="#fff" stroke-width="3"/></svg></div>
+    <div class="pub-body">
+      <p class="pub-title">Enhancing Attending-to-Resident Feedback by Using LLMs to &ldquo;Understand&rdquo; Clinical Significance: A Proof of Study</p>
+      <p class="pub-authors">P. Goswami, <b>R. Sharma</b>, H. Sagreiya, C. E. Kahn Jr., W. R. Witschey</p>
+      <p class="pub-venue">SIIM Annual Meeting, 2026 &middot; poster</p>
+    </div>
+  </div>
+
+  <div class="year-head">2025</div>
+
+  <div class="pub">
+    <div class="pub-thumb"><svg viewBox="0 0 150 104" xmlns="http://www.w3.org/2000/svg"><rect width="150" height="104" fill="#eef6f6"/><rect x="20" y="24" width="34" height="56" rx="4" fill="#12808a" opacity="0.25"/><rect x="60" y="24" width="34" height="56" rx="4" fill="#12808a" opacity="0.55"/><rect x="100" y="24" width="34" height="56" rx="4" fill="#12808a" opacity="0.9"/><line x1="26" y1="40" x2="48" y2="40" stroke="#fff" stroke-width="3"/><line x1="66" y1="40" x2="88" y2="40" stroke="#fff" stroke-width="3"/><line x1="106" y1="40" x2="128" y2="40" stroke="#fff" stroke-width="3"/></svg></div>
+    <div class="pub-body">
+      <p class="pub-title">Adapting Vision-Language Models for 3D CT/MRI Understanding on PMBB via Slice Selection and Explanation Analysis</p>
+      <p class="pub-authors">H. Chen, R. Shukla, R. Wu, S. Yang, et&nbsp;al., <b>R. Sharma</b>, C. Davatzikos, W. Witschey, B. Hou, L. Shen</p>
+      <p class="pub-venue">ICCV Workshops, 2025, pp. 2273&ndash;2282</p>
+    </div>
+  </div>
+
+  <div class="pub">
+    <div class="pub-thumb"><svg viewBox="0 0 150 104" xmlns="http://www.w3.org/2000/svg"><rect width="150" height="104" fill="#f4f1fa"/><ellipse cx="75" cy="52" rx="42" ry="30" fill="none" stroke="#6a4fb3" stroke-width="4"/><ellipse cx="60" cy="52" rx="10" ry="14" fill="#6a4fb3" opacity="0.45"/><ellipse cx="90" cy="52" rx="10" ry="14" fill="#6a4fb3" opacity="0.45"/><circle cx="75" cy="52" r="5" fill="#6a4fb3"/></svg></div>
+    <div class="pub-body">
+      <p class="pub-title">Automated CT-Based Volumetric Body Composition Analysis Predicts Post-Operative Complications Following Pancreaticoduodenectomy</p>
+      <p class="pub-authors"><b>R. Sharma</b>, S. Vasisht, G. M. Vargas, R. Damani, J. Duda, J. C. Gee, C. M. Vollmer, W. Witschey, V. Gershuni</p>
+      <p class="pub-venue">CLINICCAI (MICCAI), 2025 &middot; oral presentation</p>
+    </div>
+  </div>
+
+  <div class="pub">
+    <div class="pub-thumb"><svg viewBox="0 0 150 104" xmlns="http://www.w3.org/2000/svg"><rect width="150" height="104" fill="#fff8ec"/><polyline points="24,30 46,42 68,52 90,64 112,74 128,80" fill="none" stroke="#c98a1b" stroke-width="5" stroke-linecap="round"/><circle cx="46" cy="42" r="5" fill="#c98a1b"/><circle cx="90" cy="64" r="5" fill="#c98a1b"/><path d="M116 24v16m-8-8h16" stroke="#c98a1b" stroke-width="4" stroke-linecap="round" opacity="0.5"/></svg></div>
+    <div class="pub-body">
+      <p class="pub-title">Body Composition Analysis of Weight Loss Induced by GLP-1 Receptor Agonists</p>
+      <p class="pub-authors">K. Lee, <b>R. Sharma</b>, E. Bouche, C. Quy, V. Gershuni, W. Witschey</p>
+      <p class="pub-venue">Korean College of Radiologists Annual Meeting, 2025 &middot; oral presentation</p>
+    </div>
+  </div>
+
+  <div class="pub">
+    <div class="pub-thumb"><svg viewBox="0 0 150 104" xmlns="http://www.w3.org/2000/svg"><rect width="150" height="104" fill="#f0f7f1"/><path d="M40 76c0-26 14-46 35-46s35 20 35 46" fill="none" stroke="#0f7b3f" stroke-width="6" stroke-linecap="round"/><path d="M56 76c0-16 8-28 19-28s19 12 19 28" fill="none" stroke="#0f7b3f" stroke-width="4" stroke-linecap="round" opacity="0.5"/></svg></div>
+    <div class="pub-body">
+      <p class="pub-title">Muscle Quality on Preoperative Imaging is Associated with Postoperative Pancreatic Fistula Risk</p>
+      <p class="pub-authors">S. Vasisht, <b>R. Sharma</b>, G. M. Vargas, R. Damani, J. C. Gee, W. Witschey, C. M. Vollmer, V. M. Gershuni</p>
+      <p class="pub-venue">American College of Surgeons Annual Meeting, 2025 &middot; oral presentation</p>
+    </div>
+  </div>
+
+  <div class="pub">
+    <div class="pub-thumb"><svg viewBox="0 0 150 104" xmlns="http://www.w3.org/2000/svg"><rect width="150" height="104" fill="#fdf1f3"/><circle cx="52" cy="42" r="16" fill="none" stroke="#c2455c" stroke-width="4"/><circle cx="52" cy="42" r="6" fill="#c2455c"/><path d="M84 30l34 0m-34 12h26m-26 12h34m-34 12h22" stroke="#c2455c" stroke-width="4" stroke-linecap="round" opacity="0.55"/><path d="M44 66l-8 22m24-22l8 22" stroke="#c2455c" stroke-width="4" stroke-linecap="round"/></svg></div>
+    <div class="pub-body">
+      <p class="pub-title">Trends in Muscle and Fat Metrics and Their Association with Outcomes Following CAR T-Cell Therapy in Older Adults with Non-Hodgkin Lymphoma</p>
+      <p class="pub-authors">G. Aleixo, L. Paruzzo, <b>R. Sharma</b>, W. Witschey, et&nbsp;al., S. Dwivedy Nasta</p>
+      <p class="pub-venue">ASH Annual Meeting, 2025, abstract 3553 (<i>Blood</i> 146, suppl. 1)</p>
+    </div>
+  </div>
+
+  <div class="pub">
+    <div class="pub-thumb"><svg viewBox="0 0 150 104" xmlns="http://www.w3.org/2000/svg"><rect width="150" height="104" fill="#eef3fb"/><rect x="26" y="60" width="16" height="24" rx="3" fill="#1756a9" opacity="0.35"/><rect x="50" y="46" width="16" height="38" rx="3" fill="#1756a9" opacity="0.55"/><rect x="74" y="34" width="16" height="50" rx="3" fill="#1756a9" opacity="0.75"/><rect x="98" y="22" width="16" height="62" rx="3" fill="#1756a9"/><line x1="20" y1="90" x2="130" y2="90" stroke="#9db8dd" stroke-width="2"/></svg></div>
+    <div class="pub-body">
+      <p class="pub-title">Volumetric Body Composition Analysis on Preoperative CT Scans Improves Risk Prediction in Colorectal Surgery Patients</p>
+      <p class="pub-authors">R. Damani, <b>R. Sharma</b>, S. Vasisht, G. M. Vargas, J. Duda, G. Wu, J. C. Gee, W. Witschey, V. Gershuni</p>
+      <p class="pub-venue">RSNA Annual Meeting, 2025 &middot; poster</p>
+    </div>
+  </div>
+
+  <div class="pub">
+    <div class="pub-thumb"><svg viewBox="0 0 150 104" xmlns="http://www.w3.org/2000/svg"><rect width="150" height="104" fill="#f4f1fa"/><rect x="22" y="20" width="46" height="64" rx="5" fill="#fff" stroke="#6a4fb3" stroke-width="2.5"/><circle cx="45" cy="42" r="12" fill="none" stroke="#8a6fd0" stroke-width="3"/><line x1="30" y1="64" x2="60" y2="64" stroke="#8a6fd0" stroke-width="3"/><line x1="30" y1="72" x2="52" y2="72" stroke="#8a6fd0" stroke-width="3"/><path d="M78 52h16" stroke="#6a4fb3" stroke-width="3" stroke-linecap="round"/><path d="M88 46l8 6-8 6" fill="none" stroke="#6a4fb3" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><rect x="100" y="20" width="30" height="64" rx="5" fill="#6a4fb3" opacity="0.85"/><line x1="106" y1="34" x2="124" y2="34" stroke="#fff" stroke-width="3"/><line x1="106" y1="44" x2="120" y2="44" stroke="#fff" stroke-width="3"/><line x1="106" y1="54" x2="124" y2="54" stroke="#fff" stroke-width="3"/></svg></div>
+    <div class="pub-body">
+      <p class="pub-title">Enhancing Diagnostic Concordance and Quality Assurance Through Automated MRI and Arthroscopy Report Comparison Using Large Language Models</p>
+      <p class="pub-authors">R. Zaki, <b>R. Sharma</b>, P. Goswami, H. Yang, J. C. Gee, C. E. Kahn, J. B. Kneeland, A. Borthakur, W. Witschey</p>
+      <p class="pub-venue">RSNA Annual Meeting, 2025 &middot; poster</p>
+    </div>
+  </div>
+
+  <div class="year-head">2024</div>
+
+  <div class="pub">
+    <div class="pub-thumb"><svg viewBox="0 0 150 104" xmlns="http://www.w3.org/2000/svg"><rect width="150" height="104" fill="#eef6f6"/><rect x="38" y="40" width="60" height="18" rx="9" fill="#fff" stroke="#12808a" stroke-width="3"/><rect x="30" y="44" width="12" height="10" rx="2" fill="#12808a"/><path d="M98 49h26" stroke="#12808a" stroke-width="5" stroke-linecap="round"/><path d="M124 49l-6-5v10z" fill="#12808a"/><circle cx="58" cy="49" r="4" fill="#12808a" opacity="0.5"/><circle cx="74" cy="49" r="4" fill="#12808a" opacity="0.5"/></svg></div>
+    <div class="pub-body">
+      <p class="pub-title">Clinical Investigation of Large Volume Subcutaneous Delivery up to 25 mL for Lean and Non-Lean Subjects</p>
+      <p class="pub-authors">X. Dang, H. Shih, <b>R. Sharma</b>, D. T. Angwin-Kaerner, et&nbsp;al., D. S. Collins</p>
+      <p class="pub-venue">Pharmaceutical Research, 41(4), pp. 751&ndash;763, 2024</p>
+      <p class="pub-links"><a href="https://doi.org/10.1007/s11095-024-03683-5">paper</a></p>
+    </div>
+  </div>
+
+  <div class="pub">
+    <div class="pub-thumb"><svg viewBox="0 0 150 104" xmlns="http://www.w3.org/2000/svg"><rect width="150" height="104" fill="#f4f1fa"/><path d="M75 16c-22 0-36 14-36 32 0 12 6 20 14 26l-2 14 14-8c3 1 7 1 10 1 22 0 36-14 36-33s-14-32-36-32z" fill="none" stroke="#6a4fb3" stroke-width="4"/><path d="M58 46c8-10 26-10 34 0M62 58c6 6 20 6 26 0" stroke="#8a6fd0" stroke-width="3" fill="none" stroke-linecap="round"/></svg></div>
+    <div class="pub-body">
+      <p class="pub-title">Computational Modeling and Simulation of the Cerebrospinal Flow and Drug Delivery</p>
+      <p class="pub-authors">G. Montoya, J. V. Teli, C. Kadamus, K. Lin, et&nbsp;al., <b>R. Sharma</b>, V. K. Sharma</p>
+      <p class="pub-venue">Alzheimer&rsquo;s &amp; Dementia, 20, e094612, 2024</p>
+    </div>
+  </div>
+
+  <div class="year-head">Earlier</div>
+
+  <div class="pub">
+    <div class="pub-thumb"><svg viewBox="0 0 150 104" xmlns="http://www.w3.org/2000/svg"><rect width="150" height="104" fill="#eef3fb"/><rect x="28" y="24" width="20" height="56" rx="10" fill="none" stroke="#1756a9" stroke-width="3"/><rect x="28" y="52" width="20" height="28" rx="10" fill="#1756a9" opacity="0.5"/><rect x="65" y="24" width="20" height="56" rx="10" fill="none" stroke="#1756a9" stroke-width="3"/><rect x="65" y="42" width="20" height="38" rx="10" fill="#1756a9" opacity="0.7"/><rect x="102" y="24" width="20" height="56" rx="10" fill="none" stroke="#1756a9" stroke-width="3"/><rect x="102" y="60" width="20" height="20" rx="10" fill="#1756a9" opacity="0.35"/></svg></div>
+    <div class="pub-body">
+      <p class="pub-title">Optimal Sample Pooling: An Efficient Tool Against SARS-CoV-2</p>
+      <p class="pub-authors">S. Goyal, P. Bist, <b>R. Sharma</b></p>
+      <p class="pub-venue">medRxiv, 2020</p>
+      <p class="pub-links"><a href="https://doi.org/10.1101/2020.07.03.20145953">preprint</a></p>
+    </div>
+  </div>
+
+  <div class="pub">
+    <div class="pub-thumb"><svg viewBox="0 0 150 104" xmlns="http://www.w3.org/2000/svg"><rect width="150" height="104" fill="#eef6f6"/><rect x="24" y="36" width="102" height="32" rx="16" fill="#fff" stroke="#12808a" stroke-width="3"/><circle cx="46" cy="52" r="7" fill="#12808a" opacity="0.8"/><circle cx="70" cy="52" r="7" fill="#12808a" opacity="0.55"/><circle cx="94" cy="52" r="7" fill="#12808a" opacity="0.35"/><path d="M108 46l10 6-10 6" fill="none" stroke="#12808a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div class="pub-body">
+      <p class="pub-title">A Point-of-Care Immunoassay Platform for Thyroid Function Based on Hydrogel Sensors Embedded Inside a Microfluidic Device</p>
+      <p class="pub-authors">J. Pai, M. Azad, B. Goyal, R. Nair, <b>R. Sharma</b>, D. Dendukuri</p>
+      <p class="pub-venue">MicroTAS, pp. 102&ndash;103, 2019</p>
+    </div>
+  </div>
+
+  <div class="pub">
+    <div class="pub-thumb"><svg viewBox="0 0 150 104" xmlns="http://www.w3.org/2000/svg"><rect width="150" height="104" fill="#fff8ec"/><path d="M52 24v20L36 76a10 10 0 0 0 9 14h60a10 10 0 0 0 9-14L98 44V24" fill="none" stroke="#c98a1b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><line x1="44" y1="24" x2="106" y2="24" stroke="#c98a1b" stroke-width="4" stroke-linecap="round"/><path d="M44 66h62l6 14a6 6 0 0 1-6 6H45a6 6 0 0 1-6-6z" fill="#c98a1b" opacity="0.45"/><circle cx="66" cy="58" r="4" fill="#c98a1b"/><circle cx="84" cy="52" r="3" fill="#c98a1b" opacity="0.7"/></svg></div>
+    <div class="pub-body">
+      <p class="pub-title">Osteoconductive Amine-Functionalized Graphene&ndash;Poly(methyl methacrylate) Bone Cement Composite with Controlled Exothermic Polymerization</p>
+      <p class="pub-authors"><b>R. Sharma</b>, G. Kapusetti, S. Y. Bhong, et&nbsp;al., P. Maiti</p>
+      <p class="pub-venue">Bioconjugate Chemistry, 28(9), pp. 2254&ndash;2265, 2017</p>
+      <p class="pub-links"><a href="https://doi.org/10.1021/acs.bioconjchem.7b00241">paper</a></p>
+    </div>
+  </div>
+
+  <!-- ================= patents ================= -->
+  <h2>Patents</h2>
+  <ol class="compact">
+    <li>H. Desai, M. Kawiecki, <b>R. Sharma</b>, A. Tiwari, J. Venderley. <i>Methods and Apparatuses for Detecting Anomalies When Filling a Container with Fluid.</i> WO2023044089A1, US Patent App. PCT/US2022/043937, 2023.</li>
+    <li>K. B. Gururaj, S. Kalme, S. K. Raghunath, <b>R. Sharma</b>. <i>System for Renal Puncturing Assistance.</i> US Patent App. 17/294,009, 2022.</li>
+    <li><b>R. Sharma</b>, M. Madhusudhanan. <i>Image Processing Method of Enabling Financial Transaction and an Image Processing System Thereof.</i> US Patent App. 14/459,428, 2015.</li>
+  </ol>
+
+  <!-- ================= talks ================= -->
+  <h2>Invited Talks</h2>
+  <ol class="compact">
+    <li><i>&ldquo;The Artificial Intelligence Revolution: Are You Ready?&rdquo;</i> 36th Annual Seminar and 20th Triguna Sen Memorial Lecture, Indian Institute of Chemical Engineers, New Delhi, 2019.</li>
+  </ol>
+
+  <footer>
+    Design adapted from <a href="https://jonbarron.info/">Jon Barron&rsquo;s academic template</a>.
+    Full publication list also on <a href="https://scholar.google.com/citations?user=2VLokzIAAAAJ">Google Scholar</a> and <a href="https://orcid.org/0000-0002-4916-0174">ORCID</a>.
+  </footer>
+
 </div>
-
-{% if paginator.total_pages > 1 %}
-<ul class="pager main-pager">
-   {% if paginator.previous_page %}
-   <li class="previous">
-     <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-   </li>
-   {% endif %}
-   {% if paginator.next_page %}
-   <li class="next">
-     <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-   </li>
-   {% endif %}
- </ul>
-{% endif %}
+</body>
+</html>

@@ -97,8 +97,8 @@ subtitle: List of all published work
    Association for Clinical and Translational Science (ACTS) Annual Meeting, 2026. Abstract 78; **Journal of Clinical and Translational Science**.
 
 4. P. Goswami, **R. Sharma**, H. Sagreiya, C. E. Kahn Jr., and W. R. Witschey,
-   *Enhancing attending-to-resident feedback by using LLMs fine-tuned to "understand" clinical significance: A proof of concept*,
-   SIIM Annual Meeting, 2026.
+   *Enhancing attending-to-resident feedback by using LLMs to "understand" clinical significance: A proof of study*,
+   SIIM Annual Meeting, 2026. Poster presentation.
 
 5. G. Aleixo, L. Paruzzo, **R. Sharma**, W. Witschey, M. Ruella, D. Landsburg, S. Barta, J. Svoboda, S. Schuster, E. Chong, P. Munshi, S. Susanibar, and S. Dwivedy Nasta,
    *Trends in muscle and fat metrics and their association with outcomes following CAR T-cell therapy in older adults with non-Hodgkin lymphoma*,
