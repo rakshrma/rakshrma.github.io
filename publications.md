@@ -54,7 +54,7 @@ subtitle: List of all published work
 
 1. **R. Sharma**, C. Beeche, J. Dong, R. Zhuang, H. Qu, R. Zhang, V. Gangaram, P. Goswami, J. Xin, J. Ballard, A. Goldberg, H. Sagreiya, Q. Long, T. Chen, and W. Witschey,
    *DISCERN: A clinical impact-aware framework for radiology report comparison*,
-   **AMIA Annual Symposium**, 2026. **Accepted for oral presentation.** Preprint: [medRxiv, DOI: 10.64898/2026.05.26.26353612](https://doi.org/10.64898/2026.05.26.26353612)
+   **AMIA Annual Symposium**, 2026. **Accepted for oral presentation.** Preprint: [medRxiv, DOI: 10.64898/2026.05.26.26353612](https://doi.org/10.64898/2026.05.26.26353612) | [Code on GitHub](https://github.com/rakshrma/discern)
 
 2. R. Zhang, J. Dong, J. Xin, J. Ballard, C. Beeche, **R. Sharma**, X. Zhao, N. Konz, Q. Long, W. Witschey, and T. Chen,
    *CURA: Calibrated uncertainty with retrieval and agents for trustworthy multimodal medical decision support*,
