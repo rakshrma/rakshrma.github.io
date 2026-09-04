@@ -8,9 +8,9 @@ subtitle: List of all published work
 
 ## Journal Papers
 
-1. G. Aleixo, W.-T. Hwang, R. Sedhom, **R. Sharma**, W. Jung, C. Xia, W. Witschey, and B. Ky,
-   *The impact of body composition on cardiac function in women with early breast cancer taking cardiotoxic chemotherapy*,
-   **Breast Cancer Research** (Springer Nature), 2026. **Accepted.**
+1. G. Aleixo, W.-T. Hwang, **R. Sharma**, W. Jung, C. Xia, V. Narayan, Y. M. Martei, R. Sedhom, W. Witschey, and B. Ky,
+   *The association between adiposity and cardiac function in patients with early breast cancer receiving cardiotoxic therapies*,
+   **Breast Cancer Research** (Springer Nature), 2026. [DOI: 10.1186/s13058-026-02350-4](https://doi.org/10.1186/s13058-026-02350-4)
 
 2. X. Dang, H. Shih, **R. Sharma**, D. T. Angwin-Kaerner, K. Lin, S. Kapur, N. R. Thyagarajapuram, G. H. Shi, and D. S. Collins,
    *Clinical investigation of large volume subcutaneous delivery up to 25 mL for lean and non-lean subjects*,
@@ -30,7 +30,7 @@ subtitle: List of all published work
 
 1. **R. Sharma**†, S. Pugh†, C. Beeche, P. Singhal, R. Wu, M. Eby, J. Duda, J. Gee, K. O'Brien, H. Sagreiya, M. Serper, V. Gershuni, A. Bradbury, A. Verma, E. Eaton, K. B. Johnson, and W. Witschey († equal contribution),
    *ETHOS: Towards a modular ethics framework for clinical multi-agent systems*,
-   Submitted to the **Pacific Symposium on Biocomputing (PSB)**, 2027.
+   **arXiv**, 2026. [arXiv:2608.15424](https://arxiv.org/abs/2608.15424) — under review at the **Pacific Symposium on Biocomputing (PSB)**, 2027.
 
 2. C. A. Beeche, H. Tavolinejad, Z. Li, Z. Fan, B. Zhao, H. Wei, L. Steger, **R. Sharma**, L. Ni, S. Zaman, J. Duda, J. Gee, A. Verma, H. Sagreiya, S. M. Damrauer, M. G. Levin, D. Rader, A. Goldberg, J. A. Chirinos, and W. R. Witschey,
    *Aortic geometric atlas: Centile-based reference charts and pathological signatures across the adult lifespan*,

@@ -8,3 +8,6 @@ _site
 Thumbs.db
 ehthumbs.db
 _to_delete/
+
+# large source PDFs kept locally, not served by the site
+img/pubs/*.pdf
